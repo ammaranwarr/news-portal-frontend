@@ -1,72 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewsPortal - Latest News</title>
+    <title>NewsPortal | Home (Frontend Only)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-    <a href="#" class="logo">⚡ News<span>Portal</span></a>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#news">Latest News</a>
-        <a href="#categories">Categories</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <a href="index.html" class="logo">⚡ News<span>Portal</span></a>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="admin.html" class="btn btn-primary">Dashboard</a>
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
     </nav>
-    <div class="auth">
-        <a href="#" id="loginBtn">Login</a>
-        <a href="#" id="registerBtn" class="register">Register</a>
+
+    <header class="hero">
+        <span class="hero-tag">Static Frontend Prototype</span>
+        <h1>Stay Informed with Enterprise News</h1>
+        <p>A university-grade static layout mockup displaying news articles, category pills, and responsive UI structure.</p>
+    </header>
+
+    <div class="container">
+        <div class="filter-bar">
+            <div class="category-pills">
+                <a href="index.html" class="pill active">All Categories</a>
+                <a href="tech.html" class="pill">Technology</a>
+                <a href="sports.html" class="pill">Sports</a>
+                <a href="business.html" class="pill">Business</a>
+            </div>
+            <div class="search-form">
+                <input type="text" class="search-input" placeholder="Search news...">
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 1.8rem; font-weight: 800; font-size: 1.8rem;">Latest Stories</h2>
+
+        <div class="grid">
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Tech" class="card-img">
+                </div>
+                <div class="card-body">
+                    <span class="badge">Technology</span>
+                    <h3 class="card-title"><a href="view.html">The Future of Artificial Intelligence & Web Platforms</a></h3>
+                    <p class="card-text">Artificial Intelligence has rapidly evolved into comprehensive full-stack ecosystem architectures...</p>
+                    <div class="card-meta">
+                        <span>By <strong>Admin</strong></span>
+                        <a href="view.html">Read Full Story →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600" alt="Sports" class="card-img">
+                </div>
+                <div class="card-body">
+                    <span class="badge">Sports</span>
+                    <h3 class="card-title"><a href="view.html">Global Sports Championship Concludes with Thrilling Finals</a></h3>
+                    <p class="card-text">The highly anticipated tournament came to a dramatic close last night as the underdogs secured triumph...</p>
+                    <div class="card-meta">
+                        <span>By <strong>Admin</strong></span>
+                        <a href="view.html">Read Full Story →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Business" class="card-img">
+                </div>
+                <div class="card-body">
+                    <span class="badge">Business</span>
+                    <h3 class="card-title"><a href="view.html">Market Dynamics & Global Financial Outlook</a></h3>
+                    <p class="card-text">Global trade sectors continue to shift as technology startups challenge traditional corporate structures...</p>
+                    <div class="card-meta">
+                        <span>By <strong>Admin</strong></span>
+                        <a href="view.html">Read Full Story →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
-</header>
 
-<section class="hero">
-    <p class="tag">YOUR DAILY NEWS SOURCE</p>
-    <h1>Stay Informed.<br><span>Stay Ahead.</span></h1>
-    <p>Discover the latest stories from technology, sports, business and entertainment.</p>
-    <a href="#news" class="primary-btn">Explore Latest News →</a>
-</section>
-
-<section class="container" id="categories">
-    <h2>Explore Categories</h2>
-    <div class="categories">
-        <button data-category="All">All News</button>
-        <button data-category="Technology">Technology</button>
-        <button data-category="Sports">Sports</button>
-        <button data-category="Business">Business</button>
-        <button data-category="Entertainment">Entertainment</button>
-    </div>
-</section>
-
-<section class="container" id="news">
-    <div class="section-heading">
-        <h2>Latest Articles</h2>
-        <input type="search" id="searchInput" placeholder="Search news...">
-    </div>
-    <div class="news-grid" id="newsContainer">
-        <p>Loading latest news...</p>
-    </div>
-</section>
-
-<section class="container contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions? Send us a message.</p>
-    <form id="contactForm">
-        <input name="name" placeholder="Your Name" required>
-        <input name="email" type="email" placeholder="Your Email" required>
-        <input name="subject" placeholder="Subject" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button class="primary-btn">Send Message</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2026 NewsPortal. All Rights Reserved.</p>
-</footer>
-
-<script src="app.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>⚡ NewsPortal</h3>
+                <p>A full-stack, dynamic university news management portal built with raw HTML, CSS, and modern UI components.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Project</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="admin.html">Dashboard Access</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>University Project Info</h4>
+                <p>Course: Web Engineering Project</p>
+                <p>Frontend: Pure HTML5 & CSS3 Architecture</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Enterprise NewsPortal. Built for Academic Project Evaluation.</p>
+        </div>
+    </footer>
 </body>
 </html>
