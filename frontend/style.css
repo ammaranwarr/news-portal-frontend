@@ -1,0 +1,262 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background: #111827;
+    border-bottom: 1px solid #263247;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span, .hero h1 span {
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a, .auth a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover, .auth a:hover {
+    color: #38bdf8;
+}
+
+.register, .primary-btn {
+    background: #0284c7;
+    color: white !important;
+    padding: 11px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 420px;
+    padding: 100px 10%;
+    background: linear-gradient(120deg, #111827, #172554);
+}
+
+.tag {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero > p:not(.tag) {
+    color: #aab7ca;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.container {
+    padding: 55px 7%;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.categories button {
+    background: #1e293b;
+    color: white;
+    border: 1px solid #334155;
+    padding: 11px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.categories button:hover,
+.categories button.active {
+    background: #0284c7;
+    border-color: #0284c7;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#searchInput {
+    background: #1e293b;
+    color: white;
+    border: 1px solid #334155;
+    padding: 13px 18px;
+    border-radius: 8px;
+    width: 260px;
+    outline: none;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.news-card {
+    background: #151f30;
+    border: 1px solid #263247;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .25s;
+}
+
+.news-card:hover {
+    transform: translateY(-6px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.news-content p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.news-meta {
+    color: #38bdf8;
+    font-size: 12px;
+}
+
+.news-content button {
+    margin-top: 15px;
+    background: transparent;
+    color: #38bdf8;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact {
+    background: #111827;
+}
+
+.contact p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 600px;
+    display: grid;
+    gap: 15px;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 14px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 7px;
+    color: white;
+    font-family: inherit;
+}
+
+#contactForm textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    background: #080e19;
+}
+
+@media (max-width: 850px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 70px 7%;
+    }
+
+    #searchInput {
+        width: 100%;
+    }
+}

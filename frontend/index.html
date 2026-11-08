@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPortal - Latest News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">⚡ News<span>Portal</span></a>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#news">Latest News</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="auth">
+        <a href="#" id="loginBtn">Login</a>
+        <a href="#" id="registerBtn" class="register">Register</a>
+    </div>
+</header>
+
+<section class="hero">
+    <p class="tag">YOUR DAILY NEWS SOURCE</p>
+    <h1>Stay Informed.<br><span>Stay Ahead.</span></h1>
+    <p>Discover the latest stories from technology, sports, business and entertainment.</p>
+    <a href="#news" class="primary-btn">Explore Latest News →</a>
+</section>
+
+<section class="container" id="categories">
+    <h2>Explore Categories</h2>
+    <div class="categories">
+        <button data-category="All">All News</button>
+        <button data-category="Technology">Technology</button>
+        <button data-category="Sports">Sports</button>
+        <button data-category="Business">Business</button>
+        <button data-category="Entertainment">Entertainment</button>
+    </div>
+</section>
+
+<section class="container" id="news">
+    <div class="section-heading">
+        <h2>Latest Articles</h2>
+        <input type="search" id="searchInput" placeholder="Search news...">
+    </div>
+    <div class="news-grid" id="newsContainer">
+        <p>Loading latest news...</p>
+    </div>
+</section>
+
+<section class="container contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Send us a message.</p>
+    <form id="contactForm">
+        <input name="name" placeholder="Your Name" required>
+        <input name="email" type="email" placeholder="Your Email" required>
+        <input name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="primary-btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 NewsPortal. All Rights Reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
