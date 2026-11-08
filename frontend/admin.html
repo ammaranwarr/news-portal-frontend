@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Layout | NewsPortal (Frontend)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">⚡ News<span>Portal</span> Panel</a>
+        <div class="nav-actions">
+            <a href="index.html" class="btn btn-outline">View Front Site</a>
+            <a href="login.html" class="btn btn-danger">Logout (Admin)</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 style="font-size: 2rem; margin-bottom: 1.5rem; font-weight: 800;">Publish New Article (UI Mockup)</h2>
+
+        <form action="#" method="GET" class="card" style="padding: 2.2rem; margin-bottom: 3.5rem;">
+            <div class="form-group">
+                <label>Article Title</label>
+                <input type="text" class="form-control" placeholder="Enter article headline..." required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                <div class="form-group">
+                    <label>Category</label>
+                    <select class="form-control" required>
+                        <option>Technology</option>
+                        <option>Sports</option>
+                        <option>Business</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Featured Image Upload</label>
+                    <input type="file" class="form-control" accept="image/*">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Article Content</label>
+                <textarea class="form-control" rows="7" placeholder="Write full article content here..." required></textarea>
+            </div>
+
+            <button type="button" class="btn btn-primary" style="width: fit-content; padding: 0.8rem 2rem;">Publish Article</button>
+        </form>
+
+        <h2 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 800;">Manage Articles Table Layout</h2>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Author</th>
+                        <th>Views</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=100" style="width: 55px; height: 38px; object-fit: cover; border-radius: 6px;"></td>
+                        <td><strong>The Future of Artificial Intelligence & Web Platforms</strong></td>
+                        <td><span class="badge">Technology</span></td>
+                        <td>Admin</td>
+                        <td><strong style="color: var(--primary);">142</strong></td>
+                        <td><button class="btn btn-danger" style="padding: 0.35rem 0.8rem; font-size: 0.82rem;">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=100" style="width: 55px; height: 38px; object-fit: cover; border-radius: 6px;"></td>
+                        <td><strong>Global Sports Championship Concludes with Finals</strong></td>
+                        <td><span class="badge">Sports</span></td>
+                        <td>Admin</td>
+                        <td><strong style="color: var(--primary);">89</strong></td>
+                        <td><button class="btn btn-danger" style="padding: 0.35rem 0.8rem; font-size: 0.82rem;">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>⚡ NewsPortal</h3>
+                <p>A full-stack, dynamic university news management portal built with raw HTML, CSS, and modern UI components.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Project</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>University Project Info</h4>
+                <p>Course: Web Engineering Project</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Enterprise NewsPortal. Built for Academic Project Evaluation.</p>
+        </div>
+    </footer>
+</body>
+</html>

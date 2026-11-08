@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NewsPortal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">⚡ News<span>Portal</span></a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="admin.html" class="btn btn-primary">Dashboard</a>
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 750px;">
+        <div class="auth-card" style="max-width: 100%;">
+            <h2 style="font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">Contact Support</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Have questions or feedback regarding the news portal? Send us a direct message.</p>
+
+            <form action="#" method="GET">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" placeholder="Enter full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" class="form-control" placeholder="name@domain.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" class="form-control" placeholder="Inquiry subject..." required>
+                </div>
+                <div class="form-group">
+                    <label>Message Content</label>
+                    <textarea class="form-control" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.9rem;">Submit Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>⚡ NewsPortal</h3>
+                <p>A full-stack, dynamic university news management portal built with raw HTML, CSS, and modern UI components.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Project</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="admin.html">Dashboard Access</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>University Project Info</h4>
+                <p>Course: Web Engineering Project</p>
+                <p>Frontend: Pure HTML5 & CSS3 Architecture</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Enterprise NewsPortal. Built for Academic Project Evaluation.</p>
+        </div>
+    </footer>
+</body>
+</html>
